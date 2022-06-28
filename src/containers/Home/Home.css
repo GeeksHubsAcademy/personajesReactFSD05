@@ -1,0 +1,41 @@
+
+.homeDesign {
+
+    background-color: navajowhite;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardPersonaje {
+
+    height: 20em;
+    width: 12em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: lightskyblue;
+
+    border-radius: 1em;
+
+    cursor: pointer;
+
+    margin-top: 2em;
+    transition: 0.5s;
+}
+
+.cardPersonaje:hover {
+    background-color: lightgrey;
+
+    transition: 0.5s;
+
+}
+
+.designPic {
+    height: 12em;
+    width: 8em;
+}
