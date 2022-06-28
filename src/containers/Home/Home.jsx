@@ -1,11 +1,14 @@
 
 
 import React ,{useState, useEffect} from 'react';
+import {useNavigate} from 'react-router-dom';
 import './Home.css';
 
 import axios from 'axios';
  
 const Home = () => {
+
+    let navigate = useNavigate();
 
     const [personajes, setPersonajes] = useState([]);
 
@@ -34,6 +37,14 @@ const Home = () => {
 
     const seleccionaPersonaje = (personajeFull) => {
         console.log(personajeFull);
+
+        //Aquí guardaría en redux el personaje elegido
+
+            //Guardo provisionalmente en localStorage
+            localStorage.setItem("escogido", JSON.stringify(personajeFull));
+
+        //Me iría al container de detalle de personaje
+        navigate("/detail");
     };
 
     if(personajes[0]?.name !== ""){

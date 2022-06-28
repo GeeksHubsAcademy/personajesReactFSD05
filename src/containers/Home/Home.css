@@ -3,10 +3,10 @@
 
     background-color: navajowhite;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(4, auto)
 }
 
 .cardPersonaje {
